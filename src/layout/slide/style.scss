@@ -1,0 +1,64 @@
+@import "src/styles/main.scss";
+
+#slide {
+  position: relative;
+  align-items: center;
+  height: 500px;
+  margin-bottom: 140px;
+  .slide-content {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    .slide-heading {
+      text-align: left;
+      font-size: 70px;
+      line-height: 78px;
+      color: $VeryDarkViolet;
+      font-weight: 700;
+      font-family: "Poppins";
+    }
+    .slide-description {
+      text-align: left;
+      color: $Gray;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Poppins";
+      margin-bottom: 40px;
+    }
+    .slide-button {
+        width: 190px;
+      display: block;
+      font-size: 18px;
+      user-select: none;
+      cursor: pointer;
+      font-family: "Poppins";
+      height: 56px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-radius: 32px;
+      color: #fff;
+      background: $Cyan;
+      border: none;
+      outline: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .slide-img {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: -60px;
+    top: 0;
+    height: 100%;
+    img {
+      position: relative;
+      width: 650px;
+    }
+  }
+}

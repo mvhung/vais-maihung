@@ -1,0 +1,43 @@
+@import 'src/styles/main.scss';
+
+.link-shorten{
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 34px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    .link-item{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        span{
+            font-family: 'Poppins';
+            font-size: 16px;
+
+        }
+        >span:first-child{
+            color: $DarkViolet;
+        }
+        >span:last-child{
+            color:$Cyan;
+        }
+    }
+    .btn-copy{
+        margin-left: 24px;
+        width: 100px;
+        height: 44px;
+        font-size: 16px;
+        font-family: 'Poppins';
+        color: #fff;
+        border-radius: 6px;
+        background-color: $Cyan;
+        &:hover{opacity: 0.8;}
+    }
+    .btn-copy.active{
+        background-color: $DarkViolet;
+
+    }
+}

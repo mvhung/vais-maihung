@@ -1,0 +1,57 @@
+@import "src/styles/main.scss";
+#header {
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    .logo {
+      width: 100%;
+      display: block;
+    }
+    .header-link {
+      display: flex;
+      gap: 16px;
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Poppins";
+        color: $Gray;
+        &:hover {
+          color: $VeryDarkBlue;
+        }
+      }
+    }
+  }
+
+  .header-account {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    > div {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Poppins";
+      cursor: pointer;
+      user-select: none;
+    }
+    .login {
+        color: $Gray;
+    }
+    .signup {
+        color:#fff;
+        background: $Cyan;
+        padding:6px 16px;
+        border-radius: 32px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+  }
+}
