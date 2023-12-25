@@ -15,6 +15,29 @@ $VeryDarkViolet: hsl(260, 8%, 14%);
 
 $bgGray:hsl(230, 25%, 95%);
 
+$breakpoint-mobile: 375px;
+$breakpoint-pc: 1440px;
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: $breakpoint-pc) {
+    @content;
+  }
+}
+
+.container{
+  max-width: 1100px;
+  margin:auto;
+
+  @include mobile{
+    padding: 0 24px;
+  }
+}
 // @font-face {
 //   font-family: "darker";
 //   src: local("darker"),

@@ -9,6 +9,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    >div{
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
     h2{
         font-size: 30px;
         color: #fff;
@@ -39,6 +46,8 @@
     }
     img{
         position: absolute;
+        object-fit: cover;
+        object-position: left;
         z-index: 0;
         height: 100%;
         width: 100%;

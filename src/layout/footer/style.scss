@@ -7,6 +7,7 @@
   .footer-col-link {
     text-align: left;
     font-family: "Poppins";
+    
     h3 {
       color: #fff;
       font-size: 14px;
@@ -37,6 +38,17 @@
         filter: invert(71%) sepia(9%) saturate(3421%) hue-rotate(130deg)
           brightness(102%) contrast(75%);
       }
+    }
+  }
+
+  @include mobile{
+    .footer-col-link{
+      text-align: center;
+      margin-top: 44px;
+    }
+    .footer-col-icon {
+      margin-top: 50px;
+      justify-content: center;
     }
   }
 }

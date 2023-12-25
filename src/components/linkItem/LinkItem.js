@@ -1,12 +1,20 @@
-import './style.scss'
-function LinkItem() {
-    return ( <div className="link-shorten">
-        <div className="link-item">
-            <span>https://fonts.google.com/specimen/Poppins</span>
-            <span>http://localhost:3000/</span>
-        </div>
-        <button className="btn-copy">Copy</button>
-    </div> );
+import "./style.scss";
+function LinkItem({ origin, result, copied,setCoping }) {
+  return (
+    <div className="link-shorten">
+      <div className="link-item">
+        <span>{origin}</span>
+        <span>{result}</span>
+      </div>
+      <button
+        className={`${copied ? 'active' : ''} btn-copy`}
+        onClick={() => {
+          navigator.clipboard.writeText(result);
+          setCoping()
+        }}
+      >{`${copied ? "Copied!" : "Copy"}`}</button>
+    </div>
+  );
 }
 
 export default LinkItem;

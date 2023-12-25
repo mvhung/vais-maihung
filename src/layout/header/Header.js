@@ -1,5 +1,6 @@
 import "./style.scss";
 import logo from "../../images/logo.svg";
+import Menu from "./Menu";
 function Header() {
   return (
     <div id="header" className="container">
@@ -14,6 +15,10 @@ function Header() {
       <div className="header-account">
         <div className="login">Login</div>
         <div className="signup">Sign Up</div>
+      </div>
+      <div className="nav-mobile">
+        <Menu/>
+       
       </div>
     </div>
   );

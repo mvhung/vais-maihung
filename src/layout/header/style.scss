@@ -42,16 +42,85 @@
       user-select: none;
     }
     .login {
-        color: $Gray;
+      color: $Gray;
     }
     .signup {
-        color:#fff;
-        background: $Cyan;
-        padding:6px 16px;
-        border-radius: 32px;
-        &:hover{
-            opacity: 0.8;
+      color: #fff;
+      background: $Cyan;
+      padding: 6px 16px;
+      border-radius: 32px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    .header-account {
+      display: none;
+    }
+    .header-left {
+      .header-link {
+        display: none;
+      }
+    }
+    .nav-mobile {
+      display: block;
+    }
+  }
+}
+@include mobile {
+  .ant-dropdown {
+    width: calc(100% - 48px);
+    margin-top: 36px;
+    .ant-dropdown-menu {
+      background: $DarkViolet;
+      padding: 26px 12px;
+      .ant-dropdown-menu-item{
+        text-align: center;
+        color: #fff;
+        height: 70px;
+      } 
+      .ant-dropdown-menu-item-divider{
+        background-color: $Gray;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Poppins";
+        color: $Gray;
+        &:hover {
+          color: $VeryDarkBlue;
         }
+      }
+      .login {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Poppins";
+        cursor: pointer;
+        user-select: none;
+      }
+      .signup {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Poppins";
+        cursor: pointer;
+        user-select: none;
+        color: #fff;
+        background: $Cyan;
+        padding: 6px 16px;
+        border-radius: 32px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
   }
 }
