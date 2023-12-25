@@ -1,8 +1,7 @@
-import React from 'react';
-import { DownOutlined } from '@ant-design/icons';
-import {FontAwesomeIcon} from  '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Dropdown, Space } from 'antd';
+import React from 'react';
 const items = [
   {
     label: <a href="/">Features</a>,
