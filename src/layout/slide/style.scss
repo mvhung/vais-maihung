@@ -3,6 +3,7 @@
 #slide {
   position: relative;
   align-items: center;
+  overflow-x: hidden;
   height: 500px;
   margin-bottom: 140px;
   .slide-content {
