@@ -36,7 +36,7 @@ const Menu = () => (
     }}
     trigger={['click']}
   >
-    <a onClick={(e) => e.preventDefault()}>
+    <a href='/'onClick={(e) => e.preventDefault()}>
       <Space>
         <FontAwesomeIcon icon={faBars} style={{fontSize:'24px'}} />
       </Space>
